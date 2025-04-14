@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+Scanner scanner = new Scanner(System.in);
+
 public class MangaSoundApplication {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
