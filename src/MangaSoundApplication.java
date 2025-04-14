@@ -3,7 +3,7 @@ import java.util.Scanner;
 Scanner scanner = new Scanner(System.in);
 
 
-int numero;;;
+int murilodasdawdawd
 
 public class MangaSoundApplication {
     public static void main(String[] args) {
