@@ -1,11 +1,8 @@
 import java.util.Scanner;
 
-Scanner scanner = new Scanner(System.in);
 
 
-int murilodasdawdawd
-
-public class MangaSoundApplication {
+public class mangaSoundApplication {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         MangaController controller = new MangaController();

@@ -1,4 +1,4 @@
-git package br.com.mangarosa;
+package main.java.br.com.mangarosa;
 
 public class MangaSoundApplication
 {
