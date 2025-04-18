@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0cd96723-c1e1-46cd-b90b-c7a2f9e92865" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manga-sound-player/src/main/java/br/com/mangarosa/MangaSoundApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/manga-sound-player/src/main/java/br/com/mangarosa/MangaSoundApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manga-sound-player/src/main/java/br/com/mangarosa/MangaSoundApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manga-sound-player/src/main/java/br/com/mangarosa/collections/ListaEncadeada.java" beforeDir="false" afterPath="$PROJECT_DIR$/manga-sound-player/src/br/com/mangarosa/collections/ListaEncadeada.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manga-sound-player/src/test/java/br/com/mangarosa/collections/ListaEncadeadaTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/projeto mangasound.iml" beforeDir="false" afterPath="$PROJECT_DIR$/projeto mangasound.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MangaSoundApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MangaSoundApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MangaController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MangaSoundApplication.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +22,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="module-info" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -39,6 +42,9 @@
     &quot;accountId&quot;: &quot;dc00368c-347a-4851-9be0-814afcb4240f&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -48,36 +54,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.MangaSoundApplication.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ListaEncadeadaTest.executor&quot;: &quot;Run&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/integracao-inicial&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/rigau/OneDrive/Área de Trabalho/projeto mangasound&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/lasilva/Documents/UNEX/GitHub-Templates/manga-sound-template/manga-sound/test/src/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.MangaSoundApplication.executor": "Run",
+    "Application.br.com.mangarosa.collections.MangaSoundApplication.executor": "Run",
+    "JUnit.ListaEncadeadaTest.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "feature/integracao-inicial",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Marcelo/Desktop/teste2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/Users/lasilva/Documents/UNEX/GitHub-Templates/manga-sound-template/manga-sound/test/src/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ListaReproducao" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="br.com.mangarosa.collections" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MangaSoundApplication">
-    <configuration name="MangaSoundApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MangaSoundApplication" />
+  <component name="RunManager" selected="Application.br.com.mangarosa.collections.MangaSoundApplication">
+    <configuration name="br.com.mangarosa.collections.MangaSoundApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.mangarosa.collections.MangaSoundApplication" />
       <module name="projeto mangasound" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -98,12 +108,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.br.com.mangarosa.collections.MangaSoundApplication" />
+      <item itemvalue="JUnit.ListaEncadeadaTest" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MangaSoundApplication" />
+        <item itemvalue="Application.br.com.mangarosa.collections.MangaSoundApplication" />
         <item itemvalue="JUnit.ListaEncadeadaTest" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26053.27" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26053.27" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -117,6 +139,7 @@
       <workItem from="1744309962163" duration="783000" />
       <workItem from="1744410413827" duration="25000" />
       <workItem from="1744655960922" duration="1002000" />
+      <workItem from="1744998822568" duration="9626000" />
     </task>
     <servers />
   </component>
