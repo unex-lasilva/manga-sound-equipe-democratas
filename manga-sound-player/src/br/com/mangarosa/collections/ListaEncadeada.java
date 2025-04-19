@@ -1,12 +1,5 @@
 package br.com.mangarosa.collections;
 
-/**
- * A classe {ListaEncadeada} implementa uma estrutura de dados de lista encadeada simples.
- * Ela permite adicionar, remover e acessar elementos de maneira eficiente. Esta lista pode armazenar
- * qualquer tipo de objeto e oferece funcionalidades típicas de listas, como adicionar ao final,
- * inserir em posições específicas, remover elementos, verificar a presença de elementos e mais.
-
- */
 public class ListaEncadeada<T> {
 
     private No<T> cabeca;
@@ -17,9 +10,6 @@ public class ListaEncadeada<T> {
         this.tamanho = 0;
     }
 
-    /**
-     * Adiciona um elemento ao final da lista.
-     */
     public void append(T value) {
         No<T> novoNo = new No<>(value);
         if (cabeca == null) {
@@ -34,9 +24,6 @@ public class ListaEncadeada<T> {
         tamanho++;
     }
 
-    /**
-     * Retorna o elemento na posição especificada.
-     */
     public T get(int position) {
         if (position < 0 || position >= tamanho) {
             throw new IndexOutOfBoundsException("Posição inválida: " + position);
@@ -49,23 +36,26 @@ public class ListaEncadeada<T> {
         return atual.getValor();
     }
 
-    /**
-     * Verifica se a lista está vazia.
-     */
     public boolean isEmpty() {
         return tamanho == 0;
     }
 
-    /**
-     * Retorna o número de elementos presentes na lista.
-     */
     public int size() {
         return tamanho;
     }
 
-    /**
-     * Insere um valor em uma posição específica na lista.
-     */
+    // Método que verifica se a lista contém um elemento
+    public boolean contains(T value) {
+        No<T> atual = cabeca;
+        while (atual != null) {
+            if (atual.getValor().equals(value)) {
+                return true;
+            }
+            atual = atual.getProx();
+        }
+        return false; // Retorna false se o valor não for encontrado
+    }
+
     public void insertAt(int position, T value) {
         if (position < 0 || position > tamanho) {
             throw new IndexOutOfBoundsException("Posição inválida: " + position);
@@ -86,9 +76,6 @@ public class ListaEncadeada<T> {
         tamanho++;
     }
 
-    /**
-     * Adiciona todos os elementos de outra lista à lista atual.
-     */
     public void addAll(ListaEncadeada<T> list) {
         No<T> atual = list.cabeca;
         while (atual != null) {
@@ -97,9 +84,6 @@ public class ListaEncadeada<T> {
         }
     }
 
-    /**
-     * Remove o elemento na posição especificada.
-     */
     public boolean remove(int position) {
         if (position < 0 || position >= tamanho) {
             return false;
@@ -118,18 +102,12 @@ public class ListaEncadeada<T> {
         return true;
     }
 
-    /**
-     * Limpa todos os elementos da lista.
-     */
     public boolean clear() {
         cabeca = null;
         tamanho = 0;
         return true;
     }
 
-    /**
-     * Retorna o índice da primeira ocorrência do valor fornecido.
-     */
     public int indexOf(T value) {
         No<T> atual = cabeca;
         for (int i = 0; i < tamanho; i++) {
@@ -138,13 +116,26 @@ public class ListaEncadeada<T> {
             }
             atual = atual.getProx();
         }
-        return -1;
+        return -1; // Retorna -1 se o valor não for encontrado
     }
 
-    /**
-     * Verifica se o valor fornecido está presente na lista.
-     */
-    public boolean contains(T value) {
-        return indexOf(value) != -1;
+    public void insert(T musica, int novaPosicao) {
+        if (novaPosicao < 0 || novaPosicao > tamanho) {
+            throw new IndexOutOfBoundsException("Posição inválida: " + novaPosicao);
+        }
+
+        No<T> novoNo = new No<>(musica);
+        if (novaPosicao == 0) {
+            novoNo.setProx(cabeca);
+            cabeca = novoNo;
+        } else {
+            No<T> atual = cabeca;
+            for (int i = 0; i < novaPosicao - 1; i++) {
+                atual = atual.getProx();
+            }
+            novoNo.setProx(atual.getProx());
+            atual.setProx(novoNo);
+        }
+        tamanho++;
     }
 }

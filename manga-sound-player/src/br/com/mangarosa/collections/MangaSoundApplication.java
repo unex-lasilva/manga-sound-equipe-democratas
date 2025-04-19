@@ -5,59 +5,63 @@ import java.util.Scanner;
 public class MangaSoundApplication {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in); // Mantenha o scanner aqui
+        Scanner scanner = new Scanner(System.in);
         MangaController controller = new MangaController();
-        int opcao = 0;
 
-        while (opcao != 5) { // Usando 5 conforme o menu completo
-            System.out.println("MangaSound, o seu app de músicas");
-            System.out.println("1. Adicionar Música ao Repositório");
+        System.out.println("MangaSound, o seu app de músicas");
+
+        while (true) {
+            System.out.println("\n1. Adicionar Música ao Repositório");
             System.out.println("2. Criar Lista de Reprodução");
             System.out.println("3. Editar Lista de Reprodução");
             System.out.println("4. Executar Lista de Reprodução");
             System.out.println("5. Sair");
+
             System.out.print("Escolha uma opção: ");
+            int escolha = scanner.nextInt();
+            scanner.nextLine(); // Consumir a nova linha após o número
 
-            opcao = scanner.nextInt();
-            scanner.nextLine(); // Consumir a nova linha após o nextInt()
-
-            switch (opcao) {
+            switch (escolha) {
                 case 1:
                     System.out.println("Adicionar Música ao Repositório");
                     System.out.print("Digite o título da música: ");
                     String titulo = scanner.nextLine();
                     System.out.print("Digite o caminho do arquivo: ");
-                    String path = scanner.nextLine();
+                    String caminho = scanner.nextLine();
                     System.out.print("Digite o nome do artista: ");
-                    String nomeArtista = scanner.nextLine();
-
-                    controller.adicionarMusica(titulo, path, nomeArtista);
-                    System.out.println("Música adicionada com sucesso!");
+                    String artista = scanner.nextLine();
+                    controller.adicionarMusica(titulo, caminho, artista);
                     break;
 
                 case 2:
-                    System.out.println("Criar Lista de Reprodução (Ainda não implementado)");
+                    System.out.println("Criar Lista de Reprodução");
+                    System.out.print("Digite o nome da sua nova lista: ");
+                    String nomeLista = scanner.nextLine();
+                    controller.criarListaDeReproducao(nomeLista);
                     break;
 
                 case 3:
-                    System.out.println("Editar Lista de Reprodução (Ainda não implementado)");
+                    System.out.println("Editar Lista de Reprodução");
+                    System.out.print("Digite o nome da lista de reprodução a editar: ");
+                    nomeLista = scanner.nextLine();
+                    controller.editarLista(nomeLista);
                     break;
 
                 case 4:
-                    System.out.println("Executar Lista de Reprodução (Ainda não implementado)");
+                    System.out.println("Executar Lista de Reprodução");
+                    System.out.print("Digite o nome da lista de reprodução para executar: ");
+                    nomeLista = scanner.nextLine();
+                    controller.executarLista(nomeLista);
                     break;
 
                 case 5:
                     System.out.println("Saindo...");
-                    break;
+                    scanner.close();
+                    return; // Sai do loop e termina a aplicação
 
                 default:
                     System.out.println("Opção inválida. Tente novamente.");
-                    break;
             }
-            System.out.println(); // Adiciona uma linha em branco para melhor formatação
         }
-
-        scanner.close(); // Fechamento do scanner após o loop
     }
 }
