@@ -1,90 +1,103 @@
 package br.com.mangarosa.collections;
 
 public class ListaReproducao {
+    private String titulo;
+    private ListaEncadeada<Musica> lista;
 
-    private ListaEncadeada<Musica> listaMusicas;
-    private String nome;
-
-    // Construtor
-    public ListaReproducao(String nome) {
-        this.nome = nome;
-        this.listaMusicas = new ListaEncadeada<>();
+    // Construtor da lista de reprodução
+    public ListaReproducao(String titulo) {
+        this.titulo = titulo;
+        this.lista = new ListaEncadeada<>();
     }
 
-    // Adicionar música
-    public void adicionarMusica(Musica musica) {
-        listaMusicas.append(musica);
+    // Adiciona uma música à lista
+    public void addMusica(Musica musica) {
+        lista.append(musica);
     }
 
-    // Remover música pelo índice
-    public void removerMusica(Musica musica) {
-        for (int i = 0; i < listaMusicas.size(); i++) {
-            Musica m = (Musica) listaMusicas.get(i);
-            if (m.equals(musica)) {  // Verificando se a música é igual
-                listaMusicas.remove(i);  // Remove o índice onde a música foi encontrada
-                System.out.println("Música " + musica.getTitulo() + " removida da lista.");
-                return;
+    // Remove uma música da posição especificada
+    public boolean removerMusica(int posicao) {
+        return lista.remove(posicao);
+    }
+
+    // Insere uma música na posição especificada
+    public void inserirMusicaEm(int posicao, Musica musica) {
+        lista.insertAt(posicao, musica);
+    }
+
+    // Verifica se a lista está vazia
+    public boolean isVazia() {
+        return lista.isEmpty();
+    }
+
+    // Retorna o número de músicas na lista
+    public int tamanho() {
+        return lista.size();
+    }
+
+    // Cria uma nova lista a partir de outra lista
+    public void criarListaApartirDe(ListaReproducao outraLista) {
+        for (int i = 0; i < outraLista.tamanho(); i++) {
+            Musica musica = outraLista.obterMusica(i);
+            this.addMusica(musica);
+        }
+    }
+
+    // Retorna a posição de uma música na lista
+    public int posicaoDa(Musica musica) {
+        return lista.indexOf(musica);
+    }
+
+    // Verifica se a lista contém uma música específica
+    public boolean contemMusica(Musica musica) {
+        return lista.contains(musica);
+    }
+
+    // Limpa a lista, removendo todas as músicas
+    public boolean limparLista() {
+        return lista.clear();
+    }
+
+    // Obtém a música na posição especificada
+    public Musica obterMusica(int posicao) {
+        if (posicao >= 0 && posicao < lista.size()) {
+            return lista.get(posicao);
+        }
+        return null;
+    }
+
+    // Retorna o título da lista de reprodução
+    public String getTitulo() {
+        return titulo;
+    }
+
+    // Define um novo título para a lista de reprodução
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    // Exibe todas as músicas da lista
+    public void exibirMusicas() {
+        if (isVazia()) {
+            System.out.println("A lista de reprodução está vazia.");
+        } else {
+            for (int i = 0; i < tamanho(); i++) {
+                Musica musica = obterMusica(i);
+                System.out.println(musica.getTitulo() + " - " + musica.getArtista());
             }
         }
-        System.out.println("Música não encontrada na lista.");
     }
 
-    // Mover música de um índice para outro
-    public void moverMusica(int indiceOriginal, int novaPosicao) {
-        if (indiceOriginal < 0 || novaPosicao < 0 || indiceOriginal >= listaMusicas.size() || novaPosicao >= listaMusicas.size()) {
+    // Move uma música de uma posição para outra
+    public void moverMusica(int indiceOrigem, int indiceDestino) {
+        if (indiceOrigem < 0 || indiceOrigem >= tamanho() || indiceDestino < 0 || indiceDestino >= tamanho()) {
             System.out.println("Índices inválidos.");
             return;
         }
 
-        Musica musica = (Musica) listaMusicas.get(indiceOriginal);
-        listaMusicas.remove(indiceOriginal);
-        listaMusicas.insert(musica, novaPosicao);
-        System.out.println("Música movida para a nova posição.");
-    }
-
-    // Método para verificar se a lista de reprodução está vazia
-    public boolean isVazia() {
-        return listaMusicas.isEmpty();
-    }
-
-    // Método para obter a música pela posição na lista
-    public Musica obterMusica(int posicao) {
-        if (posicao >= 0 && posicao < listaMusicas.size()) {
-            return (Musica) listaMusicas.get(posicao);
-        } else {
-            System.out.println("Posição inválida.");
-            return null;
-        }
-    }
-
-    // Método para retornar o nome da lista de reprodução
-    public String getNome() {
-        return nome;
-    }
-
-    // Método para retornar o tamanho da lista de músicas
-    public int size() {
-        return listaMusicas.size();
-    }
-
-    // Método para retornar a música na posição específica
-    public Object get(int index) {
-        return listaMusicas.get(index);
-    }
-
-    // Método para verificar se a música está presente na lista
-    public boolean contemMusica(Musica musica) {
-        return listaMusicas.contains(musica);
-    }
-
-    // Método para limpar a lista de reprodução
-    public void limparLista() {
-        listaMusicas.clear();
-        System.out.println("Lista de reprodução limpa.");
-    }
-
-    // Método para pegar o índice da música na lista
-    public int posicaoDa(Musica musica) {
-        return listaMusicas.indexOf(musica);
+        Musica musica = obterMusica(indiceOrigem);
+        removerMusica(indiceOrigem);
+        inserirMusicaEm(indiceDestino, musica);
+        System.out.println("Música movida para a posição " + indiceDestino);
     }
 }

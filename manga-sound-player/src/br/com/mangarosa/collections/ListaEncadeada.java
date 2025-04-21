@@ -1,15 +1,16 @@
 package br.com.mangarosa.collections;
 
 public class ListaEncadeada<T> {
-
     private No<T> cabeca;
     private int tamanho;
 
+    // Construtor da lista encadeada
     public ListaEncadeada() {
         this.cabeca = null;
         this.tamanho = 0;
     }
 
+    // Adiciona um elemento ao final da lista
     public void append(T value) {
         No<T> novoNo = new No<>(value);
         if (cabeca == null) {
@@ -24,11 +25,11 @@ public class ListaEncadeada<T> {
         tamanho++;
     }
 
+    // Retorna o elemento na posição especificada
     public T get(int position) {
         if (position < 0 || position >= tamanho) {
             throw new IndexOutOfBoundsException("Posição inválida: " + position);
         }
-
         No<T> atual = cabeca;
         for (int i = 0; i < position; i++) {
             atual = atual.getProx();
@@ -36,15 +37,17 @@ public class ListaEncadeada<T> {
         return atual.getValor();
     }
 
+    // Verifica se a lista está vazia
     public boolean isEmpty() {
         return tamanho == 0;
     }
 
+    // Retorna o tamanho da lista
     public int size() {
         return tamanho;
     }
 
-    // Método que verifica se a lista contém um elemento
+    // Verifica se a lista contém o valor especificado
     public boolean contains(T value) {
         No<T> atual = cabeca;
         while (atual != null) {
@@ -53,14 +56,14 @@ public class ListaEncadeada<T> {
             }
             atual = atual.getProx();
         }
-        return false; // Retorna false se o valor não for encontrado
+        return false;
     }
 
+    // Insere um elemento na posição especificada
     public void insertAt(int position, T value) {
         if (position < 0 || position > tamanho) {
             throw new IndexOutOfBoundsException("Posição inválida: " + position);
         }
-
         No<T> novoNo = new No<>(value);
         if (position == 0) {
             novoNo.setProx(cabeca);
@@ -76,6 +79,7 @@ public class ListaEncadeada<T> {
         tamanho++;
     }
 
+    // Adiciona todos os elementos de outra lista a esta lista
     public void addAll(ListaEncadeada<T> list) {
         No<T> atual = list.cabeca;
         while (atual != null) {
@@ -84,11 +88,11 @@ public class ListaEncadeada<T> {
         }
     }
 
+    // Remove o elemento na posição especificada
     public boolean remove(int position) {
         if (position < 0 || position >= tamanho) {
             return false;
         }
-
         if (position == 0) {
             cabeca = cabeca.getProx();
         } else {
@@ -102,12 +106,14 @@ public class ListaEncadeada<T> {
         return true;
     }
 
+    // Limpa a lista, removendo todos os elementos
     public boolean clear() {
         cabeca = null;
         tamanho = 0;
         return true;
     }
 
+    // Retorna o índice do valor especificado, ou -1 se não encontrado
     public int indexOf(T value) {
         No<T> atual = cabeca;
         for (int i = 0; i < tamanho; i++) {
@@ -116,26 +122,6 @@ public class ListaEncadeada<T> {
             }
             atual = atual.getProx();
         }
-        return -1; // Retorna -1 se o valor não for encontrado
-    }
-
-    public void insert(T musica, int novaPosicao) {
-        if (novaPosicao < 0 || novaPosicao > tamanho) {
-            throw new IndexOutOfBoundsException("Posição inválida: " + novaPosicao);
-        }
-
-        No<T> novoNo = new No<>(musica);
-        if (novaPosicao == 0) {
-            novoNo.setProx(cabeca);
-            cabeca = novoNo;
-        } else {
-            No<T> atual = cabeca;
-            for (int i = 0; i < novaPosicao - 1; i++) {
-                atual = atual.getProx();
-            }
-            novoNo.setProx(atual.getProx());
-            atual.setProx(novoNo);
-        }
-        tamanho++;
+        return -1;
     }
 }

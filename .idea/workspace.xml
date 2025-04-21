@@ -5,14 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0cd96723-c1e1-46cd-b90b-c7a2f9e92865" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manga-sound-player/src/br/com/mangarosa/Player/ReprodutorMusica.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manga-sound-player/src/br/com/mangarosa/Player/TesteReprodutor.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/manga-sound-player/src/br/com/mangarosa/collections/ListaEncadeada.java" beforeDir="false" afterPath="$PROJECT_DIR$/manga-sound-player/src/br/com/mangarosa/collections/ListaEncadeada.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manga-sound-player/src/br/com/mangarosa/collections/ListaReproducao.java" beforeDir="false" afterPath="$PROJECT_DIR$/manga-sound-player/src/br/com/mangarosa/collections/ListaReproducao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manga-sound-player/src/br/com/mangarosa/collections/MangaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/manga-sound-player/src/br/com/mangarosa/collections/MangaController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manga-sound-player/src/br/com/mangarosa/collections/MangaSoundApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/manga-sound-player/src/br/com/mangarosa/collections/MangaSoundApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manga-sound-player/src/br/com/mangarosa/collections/Musica.java" beforeDir="false" afterPath="$PROJECT_DIR$/manga-sound-player/src/br/com/mangarosa/collections/Musica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manga-sound-player/src/br/com/mangarosa/collections/No.java" beforeDir="false" afterPath="$PROJECT_DIR$/manga-sound-player/src/br/com/mangarosa/collections/No.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manga-sound-player/src/br/com/mangarosa/collections/ReprodutorLista.java" beforeDir="false" afterPath="$PROJECT_DIR$/manga-sound-player/src/br/com/mangarosa/collections/ReprodutorLista.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repositorio/teste1.wav" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +72,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "feature/integracao-inicial",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Marcelo/Desktop/teste2",
+    "last_opened_file_path": "C:/Users/Marcelo/IdeaProjects/projeto plagio",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -90,6 +94,19 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.br.com.mangarosa.collections.MangaSoundApplication">
+    <configuration name="MangaSoundApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.mangarosa.MangaSoundApplication" />
+      <module name="projeto mangasound" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.mangarosa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TesteReprodutor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.mangarosa.Player.TesteReprodutor" />
       <module name="projeto mangasound" />
@@ -126,6 +143,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.MangaSoundApplication" />
       <item itemvalue="Application.TesteReprodutor" />
       <item itemvalue="Application.br.com.mangarosa.collections.MangaSoundApplication" />
       <item itemvalue="JUnit.ListaEncadeadaTest" />
@@ -133,6 +151,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.br.com.mangarosa.collections.MangaSoundApplication" />
+        <item itemvalue="Application.MangaSoundApplication" />
         <item itemvalue="Application.TesteReprodutor" />
         <item itemvalue="JUnit.ListaEncadeadaTest" />
       </list>
@@ -159,11 +178,24 @@
       <workItem from="1744410413827" duration="25000" />
       <workItem from="1744655960922" duration="1002000" />
       <workItem from="1744998822568" duration="9626000" />
+      <workItem from="1745073472156" duration="714000" />
+      <workItem from="1745155552669" duration="19977000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
