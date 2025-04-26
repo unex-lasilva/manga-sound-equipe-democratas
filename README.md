@@ -8,5 +8,11 @@ Um par de fone de ouvido, a sua lista de reprodução favorita e pronto: você e
 
 
 # Equipe: <nome-da-equipe>
-1. <Nome de fulano>
-2. <Nome de fulana>
+
+Nome: Marcelo Henrique Fernandes Mauricio Email: Marcelohenrique.pl24@gmail.com Usuário GitHub: Marcelo-Henrique231
+
+Nome: Murillo Rigaud dos Santos Oliveira E-mail: rigaudmurillo14@gmail.com Usuário GitHub: MurilloRigaud
+
+Micael Alves Brito micaelbritoff@gmail.com Usuário : Micaalves
+
+Nome: Marcos André Email: marcos_souza-@hotmail.com Usuario Github: marcosandress
