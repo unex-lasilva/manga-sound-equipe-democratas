@@ -13,7 +13,7 @@ Nome: Marcelo Henrique Fernandes Mauricio Email: Marcelohenrique.pl24@gmail.com 
 
 Nome: Murillo Rigaud dos Santos Oliveira E-mail: rigaudmurillo14@gmail.com Usuário GitHub: MurilloRigaud
 
-Micael Alves Brito micaelbritoff@gmail.com Usuário : Micaalves
+Nome: Micael Alves Brito micaelbritoff@gmail.com Usuário : Micaalves
 
 Nome: Marcos André Email: marcos_souza-@hotmail.com Usuario Github: marcosandress
   
