@@ -16,8 +16,7 @@ Nome: Murillo Rigaud dos Santos Oliveira E-mail: rigaudmurillo14@gmail.com Usuá
 Micael Alves Brito micaelbritoff@gmail.com Usuário : Micaalves
 
 Nome: Marcos André Email: marcos_souza-@hotmail.com Usuario Github: marcosandress
-
-
+  
 <table>
   <tr>
     <th>Integrante</th>
@@ -54,7 +53,6 @@ Nome: Marcos André Email: marcos_souza-@hotmail.com Usuario Github: marcosandre
     <td>10</td>
     <td>X</td>
   </tr>
-  <!-- Repita para os outros integrantes -->
   <tr>
     <td>Nota</td>
     <td><b></b></td>
@@ -63,3 +61,4 @@ Nome: Marcos André Email: marcos_souza-@hotmail.com Usuario Github: marcosandre
     <td><b></b></td>
   </tr>
 </table>
+
