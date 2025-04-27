@@ -13,6 +13,52 @@ Nome: Marcelo Henrique Fernandes Mauricio Email: Marcelohenrique.pl24@gmail.com 
 
 Nome: Murillo Rigaud dos Santos Oliveira E-mail: rigaudmurillo14@gmail.com Usuário GitHub: MurilloRigaud
 
-Micael Alves Brito micaelbritoff@gmail.com Usuário : Micaalves
+Nome: Micael Alves Brito micaelbritoff@gmail.com Usuário : Micaalves
 
 Nome: Marcos André Email: marcos_souza-@hotmail.com Usuario Github: marcosandress
+  
+<table>
+  <tr>
+    <th>Integrante</th>
+    <th>Marcelo Henrique</th>
+    <th>Murillo Rigaud</th>
+    <th>Micael Alves </th>
+    <th>Marcos André</th>
+  </tr>
+  <tr>
+    <td>Marcelo Henrique</td>
+    <td>X</td>
+    <td>10</td>
+    <td>10</td>
+    <td>10</td>
+  </tr>
+<tr>
+    <td>Murillo Rigaud</td>
+    <td>10</td>
+    <td>X</td>
+    <td>10</td>
+    <td>10</td>
+  </tr>
+<tr>
+    <td>Micael Alves</td>
+    <td>10</td>
+    <td>10</td>
+    <td>X</td>
+    <td>10</td>
+  </tr>
+<tr>
+    <td>Marcos André</td>
+    <td>10</td>
+    <td>10</td>
+    <td>10</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>Nota</td>
+    <td><b></b></td>
+    <td><b></b></td>
+    <td><b></b></td>
+    <td><b></b></td>
+  </tr>
+</table>
+
